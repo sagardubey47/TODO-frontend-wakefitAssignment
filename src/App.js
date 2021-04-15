@@ -51,7 +51,7 @@ function App() {
            <Typography variant="h5" className={classes.col_heading} >Pending Tasks</Typography>
             {
               pendingPost.map((post) => {
-               return <ShowPost key={post._id} post={post} />
+               return <ShowPost key={post._id} post={post} setCurrentId={setCurrentId}/>
               })
             }
          </section>
@@ -59,7 +59,7 @@ function App() {
              <Typography variant="h5" className={classes.col_heading}>Completed Tasks</Typography>
              {
               completedPost.map((post) => {
-               return <ShowPost key={post._id} post={post}/>
+               return <ShowPost key={post._id} post={post} setCurrentId={setCurrentId}/>
               })
             }
          </section>

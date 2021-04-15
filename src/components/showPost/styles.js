@@ -9,7 +9,7 @@ export default makeStyles({
     
   },
   card: {
-   
+   margin: "10px 5px"
   },
   overlay: {
    

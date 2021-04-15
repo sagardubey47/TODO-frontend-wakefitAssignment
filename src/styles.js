@@ -10,8 +10,13 @@ export default makeStyles((theme) => ({
     alignItems: 'center',
   }, 
   heading: {
-    fontSize: '2.5rem',
+    fontSize: '2rem',
     color: 'rgba(0,183,255, 1)', 
+  },
+  col_heading: {
+     borderRadius: 10,
+     backgroundColor: '#fff', 
+     color: 'rgba(0,183,255, 1)',
   },
   [theme.breakpoints.down("sm")]: {
     mainContainer: {

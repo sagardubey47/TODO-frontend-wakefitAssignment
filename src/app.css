@@ -3,10 +3,12 @@
 }
 
 .main_body {
+   height: fit-content;
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    padding: 20px 10px;
+
 }
 
 .col-1 {
@@ -15,11 +17,12 @@
 
 .col-2 {
    flex: 3.5;
+    /* overflow-y: scroll; */
 }
 
 .col-3 {
    flex: 3.5;
-  
+    /* overflow-y: scroll; */
 }
 
 section {

@@ -1,6 +1,6 @@
 
 // eslint-disable-next-line import/no-anonymous-default-export
-import {FETCH_ALL, CREATE, UPDATE, DELETE, LIKEPOST} from "../constants/actionTypes";
+import {FETCH_ALL, CREATE, UPDATE, DELETE} from "../constants/actionTypes";
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -13,8 +13,7 @@ export default (posts = [], action) => {
        case FETCH_ALL:
            return action.payload; 
 
-       case UPDATE:
-       case LIKEPOST:    
+       case UPDATE:   
             return posts.map((post) => post.id === action.id ? action.payload : post )
        
        case DELETE:

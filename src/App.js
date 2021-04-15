@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from "react"
+import React,{useEffect} from "react"
 import "./app.css"
 
 import {useDispatch} from "react-redux"
@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [])
+  }, [dispatch])
 
   const posts = useSelector((state) => state.posts);
    

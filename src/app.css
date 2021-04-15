@@ -1,0 +1,13 @@
+.app {
+   text-align: center; 
+}
+
+.main_body {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+section {
+    text-align: center;
+}
